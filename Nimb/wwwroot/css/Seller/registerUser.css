@@ -1,0 +1,186 @@
+@font-face {
+    font-family: Inter-Medium;
+    src: url("/resource/fonts/inter/Inter-Medium.ttf");
+}
+
+@font-face {
+    font-family: Inter-SemiBold;
+    src: url("/resource/fonts/inter/Inter-SemiBold.ttf");
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #E7E7E7;
+}
+
+
+.container .main {
+    display: flex;
+    justify-content: center;
+}
+
+    .container .main .bg {
+        margin-top: 100px;
+        background-color: white;
+        height: auto;
+        width: 650px;
+        border-radius: 10px;
+        -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    }
+
+.container .header-container {
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+}
+
+option {
+    font-family: Inter-Medium;
+}
+
+select {
+    font-family: Inter-Medium;
+}
+
+.container .header {
+    background-color: #D9D9D9;
+    border: 0;
+    width: 150px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 10px;
+    height: 25px;
+    font-weight: 500;
+    font-family: Inter-Medium;
+}
+
+.container .inputs {
+    margin-left: -200px;
+    margin-top: -80px;
+}
+
+.container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    margin-left: 0;
+}
+
+
+    .container form input {
+        width: 350px;
+        height: 35px;
+        border-radius: 5px;
+        margin: 15px;
+        background-color: #D9D9D9;
+        border: 0;
+        -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 4px, rgba(0, 0, 0, 0.23) 0px 2px 4px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 4px, rgba(0, 0, 0, 0.23) 0px 2px 4px;
+        font-size: 17px;
+    }
+
+
+::placeholder {
+    padding: 5px;
+    font-family: Inter-SemiBold;
+}
+
+container .main .bg .btn-group {
+    margin-top: 20px;
+}
+
+.container form #Button {
+    width: 150px;
+    height: 35px;
+    margin: 20px;
+    border: 0;
+    border-radius: 5px;
+    background-color: #212529;
+    color: #FFF;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    box-shadow: rgb(0 0 0 / 16%) 0px 3px 6px, rgb(0 0 0 / 23%) 0px 3px 6px;
+    text-align: center;
+    cursor: pointer;
+    font-family: Inter-Medium;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.container #Button:hover {
+    opacity: .8;
+}
+
+@media screen and (max-width: 770px) {
+    .container .main .bg {
+        width: 450px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container .inputs {
+        margin-left: 0;
+        margin-top: -80px;
+    }
+
+    .container .header-container {
+        width: 450px;
+    }
+
+    .container .header {
+        margin-top: -65px;
+    }
+}
+
+
+/* For phones */
+
+@media screen and (max-width: 420px) {
+    .container .main .bg {
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container .inputs {
+        margin-left: 0;
+        margin-top: -80px;
+    }
+
+    .container form input {
+        width: 300px;
+    }
+
+    .container .header {
+        margin-top: -65px;
+        margin-right: 50px;
+    }
+
+    .container form #Button {
+        width: 120px;
+    }
+}
+
+
+@media screen and (max-width: 370px) {
+    .container .main .bg {
+        width: 300px;
+    }
+
+    .container form input,
+    .container form select {
+        width: 250px;
+    }
+
+    .container form #Button {
+        width: 100px;
+    }
+
+    .container .header {
+        margin-right: 75px;
+    }
+}
+}

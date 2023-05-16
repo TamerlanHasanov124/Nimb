@@ -1,0 +1,136 @@
+@font-face {
+    font-family: Inter-SemiBold;
+    src: url("/resource/fonts/inter/Inter-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: Inter-Regular;
+    src: url("/resource/fonts/inter/Inter-Regular.ttf");
+}
+
+@font-face {
+    font-family: Inter-Light;
+    src: url("/resource/fonts/inter/Inter-Light.ttf");
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #E7E7E7;
+}
+
+table {
+    margin-top: 50px;
+}
+
+.container .main {
+    display: flex;
+    justify-content: center;
+}
+
+.bg label {
+    font-family: Inter-Regular;
+}
+
+.bg p {
+    font-family: Inter-SemiBold;
+}
+
+.dataTables_paginate {
+    margin-bottom: 20px;
+}
+
+.container .bg {
+    margin-top: 50px;
+    background-color: white;
+    height: auto;
+    width: 1296px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+th {
+    font-family: Inter-SemiBold;
+}
+
+td {
+    font-family: Inter-Regular;
+}
+
+.dataTables_info, a {
+    font-family: Inter-Light;
+}
+
+.container .main .bg .table .display {
+    margin-top: 20px;
+}
+
+.dataTables_info {
+    margin-left: 20px;
+}
+
+.dataTables_filter {
+    margin-top: 20px;
+}
+
+.display {
+    margin-top: 10px;
+}
+
+.container .buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 30px;
+}
+
+    .container .buttons .firstButton,
+    .container .buttons .secondButton,
+    .container .buttons .thirdButton,
+    .container .buttons .fourthButton {
+        width: 200px;
+        height: 35px;
+        margin-top: 30px;
+        border: 0;
+        border-radius: 5px;
+        background-color: #212529;
+        color: #FFF;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+        .container .buttons .firstButton:hover,
+        .container .buttons .secondButton:hover,
+        .container .buttons .thirdButton:hover,
+        .container .buttons .fourthButton:hover {
+            opacity: .8;
+        }
+
+        .container .buttons .firstButton p,
+        .container .buttons .secondButton p,
+        .container .buttons .thirdButton p,
+        .container .buttons .fourthButton p {
+            font-size: 17px;
+            font-weight: 500;
+            font-family: Inter-SemiBold;
+            margin-top: 15px;
+        }
+
+
+@media screen and (max-width: 1000px) {
+
+    .container .buttons {
+        display: flex;
+        flex-direction: column;
+    }
+
+        .container .buttons .firstButton,
+        .container .buttons .secondButton,
+        .container .buttons .thirdButton,
+        .container .buttons .fourthButton {
+            width: 350px;
+        }
+}

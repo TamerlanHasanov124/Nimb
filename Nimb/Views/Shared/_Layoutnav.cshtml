@@ -1,0 +1,56 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Nimb</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor02">
+            <ul class="navbar-nav me-auto">
+                @{
+                    if (TempData["Check"].ToString() == "keeper")
+                    {
+                        <form>
+                            <li class="nav-item">
+                                <button asp-controller="StoreKeeper" asp-action="AddProduct" class="nav-link btn btn-link text-light">Add product</button>
+                            </li>
+                            </form>
+                            <form>
+                            <li class="nav-item" type="submit" class="nav-link btn btn-link text-light">
+                                <button asp-controller="StoreKeeper" asp-action="AddProvider" type="submit" class="nav-link btn btn-link text-light">Add supplier</button>
+                            </li>
+                        </form>
+                    }
+                    else if (TempData["Check"].ToString() == "Seller")
+                    {
+                        <form>
+                            <li class="nav-item" type="submit" class="nav-link btn btn-link text-light">
+                                <button asp-controller="Seller" asp-action="SellerMain" type="submit" class="nav-link btn btn-link text-light">Home</button>
+                            </li>
+                        </form>
+                    }
+                    else if (TempData["Check"].ToString() == "Admin")
+                    {
+                        <form>
+                            <li class="nav-item" type="submit" class="nav-link btn btn-link text-light">
+                                <button asp-controller="Admin" asp-action="AdminPanel" type="submit" class="nav-link btn btn-link text-light">Home</button>
+                            </li>
+                        </form>
+                    }
+                 }
+                <li class="nav-item">
+                    <form id="logoutForm" class="form-inline" asp-controller="Auth" asp-action="Logout">
+                        <button id="logout" type="submit" class="nav-link btn btn-link text-light">Logout</button>
+                    </form>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+</nav>
